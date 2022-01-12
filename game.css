@@ -1,0 +1,84 @@
+.choice-container{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+	width:  65vw;
+	font-size: 1.3rem;
+	border: 0.2rem solid DarkSlateBlue;
+	background-color: aliceblue;
+}
+
+.choice-container:hover {
+	cursor:  pointer;
+	box-shadow: 1px 3px 5px;
+	transform: translate(-0.1rem);
+	transition: transform 150ms;
+}
+.choice-prefix {
+	background-color: DarkSlateBlue;
+	color: white;
+	padding: 1.5rem 2rem;
+}
+
+.choice-option{
+	color: Indigo;
+	width: 100%;
+	padding: 1.5vw;
+}
+
+#hud {
+	display:  flex;
+	justify-content: space-between;
+}
+
+.hud-prefix {
+	font-size: 2vw;
+	font-weight: 600;
+	color: midnightblue;
+	text-align: center;
+}
+
+.hud-main {
+	font-size: 4vw;
+	color: DarkSlateBlue;
+	text-align: center;
+}
+
+.correct {
+	background-color: #26d426;
+}
+
+.incorrect {
+	background-color: #ff4040;
+}
+
+#progressbar{
+	height: 3.5vw;
+	width:  20vw;
+	border: 0.3rem solid DarkSlateBlue;
+	margin-top: 1vw;
+}
+
+#progressbarfull{
+	height: 2.9vw;
+	background-color: DarkSlateBlue;
+	width:  0%;
+}
+
+#loader {
+	border:  1.6rem solid white;
+	border-radius: 50%;
+	border-top: 1.6rem solid darkSlateBlue;
+	width: 12rem;
+	height:  12rem;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
